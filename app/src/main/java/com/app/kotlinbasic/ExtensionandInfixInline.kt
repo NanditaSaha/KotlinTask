@@ -3,7 +3,7 @@ package com.app.kotlinbasic
 val String.lastChar
     get() = this[length - 1]
 
-fun <T> T.addString(b: T) : String {
+fun <T> T.addString(b: T) : String {    // Generics
     return this.toString() + b.toString()
 }
 
