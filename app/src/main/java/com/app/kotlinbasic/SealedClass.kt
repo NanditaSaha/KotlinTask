@@ -7,9 +7,11 @@ fun main(args: Array<String>) {
 
     var d = A.D
     d.name()
-   // val o=mOperation.Add(5)
+
     val p=execute(5,mOperation.Add(10))
-    print("$p")
+    println("Result Add- $p")
+    val p1=execute(10,mOperation.Substract(1))
+    println("Result Subtraction- $p1")
 
 }
 
