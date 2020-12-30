@@ -1,18 +1,14 @@
 package com.app.kotlinbasic
 
-class User(user_id:Int,user_name:String)
-{
-    val id:Int
-    val name:String
-    init{
-        id=user_id
-        name=user_name
-        print("Id: $id Name:  $name" )
+class User(user_id: Int, user_name: String) {
+   private val id: Int = user_id
+    val name: String = user_name
+
+    init {
+        print("Id: $id Name:  $name")
     }
-
-
 }
-fun main(arg:Array<String>)
-{
-    val mUser=User(1,"Nandita")
+
+fun main() {
+    val mUser = User(1, "Nandita")
 }

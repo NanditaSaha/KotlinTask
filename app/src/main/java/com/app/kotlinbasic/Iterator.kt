@@ -1,19 +1,21 @@
 package com.app.kotlinbasic
 
-fun main(args:Array<String>){
+import java.util.*
+
+fun main() {
 
     val mWord = "SampleText"
     for (letter in mWord) {
         println("Upper Text ${letter.toUpperCase()}")
     }
-    println("That makes ${mWord.toUpperCase()}")
-
+    println("That makes ${mWord.toUpperCase(Locale.getDefault())}")
 
     for (char in 'a'..'z') {
         print("$char ")
     }
     println()
-    val mNumbers = mutableListOf("One", "Two","Three","Four")
+
+    val mNumbers = mutableListOf("One", "Two", "Three", "Four")
     val mMutableListIterator = mNumbers.listIterator()
     for (number in mNumbers) {
         println("$number is number.")

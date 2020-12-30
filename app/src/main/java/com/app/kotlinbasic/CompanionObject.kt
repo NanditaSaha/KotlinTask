@@ -4,7 +4,7 @@ import java.util.logging.Logger
 
 class MyClass {
     companion object {
-        val LOG = Logger.getLogger(MyClass::class.java.name)
+        val LOG: Logger = Logger.getLogger(MyClass::class.java.name)
     }
 
     fun foo() {
@@ -12,9 +12,7 @@ class MyClass {
     }
 }
 
-fun main(arg:Array<String>)
-{
-    val a=MyClass()
-
-    println( a.foo())
+fun main() {
+    val a = MyClass()
+    println(a.foo())
 }

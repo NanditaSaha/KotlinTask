@@ -1,9 +1,8 @@
 package com.app.kotlinbasic.scop
 
-fun main(arg:Array<String>)
-{
+fun main() {
     val mPerson = Person().apply {
-       this.name = "Mon Saha"
+        this.name = "Mon Saha"
         this.email = "xxx@gmail.com"
         description()
     }

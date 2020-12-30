@@ -1,7 +1,8 @@
 package com.app.kotlinbasic.scop
 
-fun main(arg:Array<String>)
-{
+import java.util.*
+
+fun main() {
     val result = run {
         val x = 10
         val y = x + 3
@@ -11,7 +12,7 @@ fun main(arg:Array<String>)
 
     val mResult = "Nandita".run {
         val mSubStr = substring(1)
-        mSubStr.toUpperCase()
+        mSubStr.toUpperCase(Locale.getDefault())
     }
     println(mResult)
 }

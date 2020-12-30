@@ -1,19 +1,21 @@
 package com.app.kotlinbasic
 
-class mOuter{
-    private  var name: String = "Nandita"
-    inner class  mInner{
+class MOuter {
+    private var name: String = "Nandita"
+
+    inner class MInner {
         var message: String = "i am inside inner"
         private var age: Int = 10
-        fun desc(){
-            println("Name - ${name} Age - ${age}") //  outer class member
+        fun desc() {
+            println("Name - $name Age - $age") //  outer class member
 
         }
     }
 }
-fun main(args: Array<String>){
-    println(mOuter().mInner().message)
-    var mObject = mOuter().mInner()
+
+fun main() {
+    println(MOuter().MInner().message)
+    val mObject = MOuter().MInner()
     mObject.desc()
 
 }

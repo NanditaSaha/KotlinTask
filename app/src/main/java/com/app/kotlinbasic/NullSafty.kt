@@ -1,11 +1,12 @@
 package com.app.kotlinbasic
 
-fun main(args: Array<String>) {
+import java.util.*
+
+fun main() {
 
     //  Non-nullable
-    val nonNull: String = "Nandita Saha"
+    val nonNull = "Nandita Saha"
     println(nonNull.length)
-
 
     //  Null
     var maybeNull: String? = null
@@ -15,6 +16,6 @@ fun main(args: Array<String>) {
     println(maybeNull.length)
 
     val nullable: String? = null
-    println(nullable?.toUpperCase())
-    println(nullable!!.toUpperCase()) // throw exception
+    println(nullable?.toUpperCase(Locale.getDefault()))
+    println(nullable!!.toUpperCase(Locale.getDefault())) // throw exception
 }

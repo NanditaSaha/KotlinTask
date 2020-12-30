@@ -1,13 +1,13 @@
 package com.app.kotlinbasic.scop
 
-fun main(arg:Array<String>)
-{
+import java.util.*
+
+fun main() {
     val mResult = with("Nandita") {
         val mSubStr = substring(1)
-        mSubStr.toUpperCase()
+        mSubStr.toUpperCase(Locale.getDefault())
     }
     println(mResult)
-
 
     val mMutable = mutableListOf("Kotlin", "C", "Java")
     val mResultOne = with(mMutable) {

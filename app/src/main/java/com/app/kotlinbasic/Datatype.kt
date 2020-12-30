@@ -1,6 +1,6 @@
 package com.app.kotlinbasic
 
-fun main(args:Array<String>){
+fun main() {
 
     val mFlag = true
     val mB: Byte = 127      //try to assign 128
@@ -11,13 +11,13 @@ fun main(args:Array<String>){
     val mDouble: Double = 127.0
     val mC: Char = 'a'
     val mStr: String = "SampleText"
-    println("Boolean - "+mFlag)
-    println("Byte - "+mB)
-    println("Short - "+mS)
-    println("Int - "+mI)
-    println("Long - "+mL)
-    println("Float - "+mF)
-    println("Double - "+mDouble)
-    println("Char - "+mC)
-    println("String - "+mStr)
+    println("Boolean - $mFlag")
+    println("Byte - $mB")
+    println("Short - $mS")
+    println("Int - $mI")
+    println("Long - $mL")
+    println("Float - $mF")
+    println("Double - $mDouble")
+    println("Char - $mC")
+    println("String - $mStr")
 }

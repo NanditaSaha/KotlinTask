@@ -1,12 +1,12 @@
 package com.app.kotlinbasic
 
-val mVal=5
-var mText="SampleText"
-fun main(args:Array<String>){
+const val mVal = 5
+var mText = "SampleText"
+fun main() {
 
     println(mVal)
- //   mVal=10  Error val can not be assigned
+    //   mVal=10  Error val can not be assigned
     println(mText)
-    mText="UpdatedSampleText"
+    mText = "UpdatedSampleText"
     println(mText)
 }
